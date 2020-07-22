@@ -4,7 +4,7 @@ import InstrumentColumn from '../components/InstrumentColumn';
 import Board from '../components/Board';
 import Knobs from '../components/Knobs';
 
-const VisualContainer = () => {
+const VisualContainer = (sampleData, { instruments, status, users, localState }) => {
   return (
     <div className="body">
       <div className="VisualContainer">

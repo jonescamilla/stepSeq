@@ -14,10 +14,17 @@ body {
   width: 100vw;
 }
 
-.HeaderContainer {
+.Header {
   border :2px solid gray;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  .Share {
+    display: flex;
+  }
+  .Users {
+    display: flex;
+  }
 }
 
 .Footer {
@@ -27,7 +34,6 @@ body {
 }
 
 .body {
-  border: 2px solid blue;
   display: flex;
   height: 100%;
   width: 100%;
@@ -37,7 +43,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    border: 2px solid green;
     max-width: 1500px;
     min-width: 700px;
     min-height: 300px;
