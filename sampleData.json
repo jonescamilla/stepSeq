@@ -1,8 +1,6 @@
-
-state = {
-  // global state
-  instruments = [
-    { name: "Drums", soundPreset: "BasicDrumset", mono: null, legato: false, grid: 
+{
+  "instruments": [
+    { "name": "Drums", "soundPreset": "BasicDrumset", "mono": null, "legato": false, "grid": 
       [
         [0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
         [0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
@@ -11,10 +9,10 @@ state = {
         [0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
         [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
         [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
-        [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
-      ],
+        [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0]
+      ]
     },
-    { name: "Bass", soundPreset: "ClassicBassSynth", mono: true, legato: true, grid: 
+    { "name": "Bass", "soundPreset": "ClassicBassSynth", "mono": true, "legato": true, "grid": 
       [
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -23,10 +21,10 @@ state = {
         [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
-        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0],
-      ], 
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0]
+      ]
      },
-    { name: "Synth1", soundPreset: "SpaceySynth", mono: false, legato: false, grid:
+    { "name": "Synth1", "soundPreset": "SpaceySynth", "mono": false, "legato": false, "grid":
       [
         [0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
         [0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
@@ -35,35 +33,35 @@ state = {
         [0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
         [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
         [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
-        [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0],
-      ], 
-    },
+        [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0]
+      ]
+    }
   ],
 
-  status = { 
-    secsRemaining: 257,
-    bpm: 120,
-    isPlaying: true,
+  "status": { 
+    "secsRemaining": 257,
+    "bpm": 120,
+    "isPlaying": true
   },
 
-  users = [
-    { userId: 1, userName: 'Tom L', instrumentSelected: 2, color: 'blue'},
-    { userId: 2, userName: 'Matt Gin', instrumentSelected: 2, color: 'green'},
+  "users": [
+    { "userId": 1, "userName": "Tom L", "instrumentSelected": 2, "color": "blue"},
+    { "userId": 2, "userName": "Matt Gin", "instrumentSelected": 2, "color": "green"}
   ],
 
-  localState = {
-    localUserId: 1,
-    localScale: 0,
-    // localOctaveStart: 'C2'
-  }
+  "localState": {
+    "localUserId": 1,
+    "localScale": 0
+  },
+  
+  "scales": [
+    ["C", "D", "E", "F", "G", "A", "B"],
+    ["C", "D", "Eb", "F", "G", "A", "Bb"],
+    ["C", "Db", "Eb", "F", "G", "Ab", "B"],
+    ["C", "D", "E", "F#", "G", "A", "B"],
+    ["C", "D", "E", "F", "G", "A", "Bb"],
+    ["C", "D", "Eb", "F", "G", "Ab", "Bb"],
+    ["C", "Db", "Eb", "F", "Gb", "Aa", "Bb"]
+  ]
 }
 
-const scales = [
-  ['C', 'D', 'E', 'F', 'G', 'A', 'B'],
-  ['C', 'D', 'Eb', 'F', 'G', 'A', 'Bb'],
-  ['C', 'Db', 'Eb', 'F', 'G', 'Ab', 'B'],
-  ['C', 'D', 'E', 'F#', 'G', 'A', 'B'],
-  ['C', 'D', 'E', 'F', 'G', 'A', 'Bb'],
-  ['C', 'D', 'Eb', 'F', 'G', 'Ab', 'Bb'],
-  ['C', 'Db', 'Eb', 'F', 'Gb', 'Aa', 'Bb'],
-],
